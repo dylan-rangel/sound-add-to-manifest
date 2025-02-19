@@ -37,12 +37,3 @@ Before running the project, ensure you have the following installed:
     ```
 
 3. Set up your database. You can configure it in the `config/database.js` file.
-
-## Usage
-
-### Step 1: Parsing Autorun File
-
-To convert a `.autorun` file to a database:
-
-```bash
-node parseAutorun.js path/to/autorun/file
