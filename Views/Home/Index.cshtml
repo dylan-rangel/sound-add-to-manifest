@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Please select a .lua or .txt to convert to manifest.</p>
+
+    <div class="col-md-10">
+        @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @enctype = "multipart/form-data"}))
+        {
+            <input type="file" name="file" required/>
+            <br />
+            <input type="submit" value="Save" />
+        }
+    </div>
+</div>
+
+<a id="a">a</a>
